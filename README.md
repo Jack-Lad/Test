@@ -1,1 +1,13 @@
-This is a test
+# Simple website
+
+A static one-page site for Jack.
+
+## Run locally
+
+Open `index.html` in a browser, or from this folder:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then visit http://localhost:8000
