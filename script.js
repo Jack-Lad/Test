@@ -5,6 +5,11 @@ function isValidEmail(value) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 }
 
+form.addEventListener("input", () => {
+  status.classList.remove("error");
+  status.textContent = "";
+});
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   status.classList.remove("error");
